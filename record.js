@@ -55,7 +55,7 @@ am(async () => {
   const browser = await puppeteer.launch({
     executablePath: browserExePath,
     userDataDir: profileDir.path,
-    userDataDir: '/home/spinda/.config/BraveSoftware/Brave-Browser-Development',
+    // userDataDir: '/home/spinda/.config/BraveSoftware/Brave-Browser-Development',
     args: [
       ...(enableBrowserLogging ? ['--enable-logging', '--v=0'] : []),
       '--disable-brave-update',
